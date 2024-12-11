@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(227, 230, 171);
 }
 
 body {
@@ -20,7 +20,6 @@ body {
     max-width: 800px;
     padding: 25px 15px 25px 15px;
     margin-top: 120px;
-
 }
 
 h1 {
@@ -32,49 +31,37 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    text-align: start;
     padding-bottom: 20px;
 }
 
 #inputInfo {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     padding: 10px;
 }
 
-#controlField1 {
-    display: block;
+.controlField {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding-bottom: 20px;
-    text-align: center;
 }
 
-#controlField2 {
-    display: block;
-    justify-content: left;
-    padding-bottom: 20px;
-    text-align: center;
+.controlField label {
+    white-space: nowrap;
 }
 
-#controlField3 {
-    display: block;
-    justify-content: left;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-#controlField4 {
-    display: block;
-    justify-content: left;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-#controlField5 {
-    display: block;
-    justify-content: left;
-    padding-bottom: 20px;
+.controlField input {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    text-align: start;
     text-align: center;
 }
 
@@ -87,9 +74,10 @@ h2 {
     width: 300px;
     height: 50px;
     border-radius: 8px;
-    background-color: rgb(13, 175, 224);
-    font-size: 20px;
-
+    background-color: rgb(187, 159, 0);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #242424;
 }
 
 #calcButton button:hover {
@@ -97,13 +85,5 @@ h2 {
 }
 
 #calcButton button:active {
-    background-color: rgb(7, 121, 155);
-}
-
-input {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    border-bottom: 2px solid white;
-    font-size: 20px;
-    text-align: center;
+    background-color: rgb(94, 80, 0);
 }
